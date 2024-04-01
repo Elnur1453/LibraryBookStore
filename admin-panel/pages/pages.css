@@ -1,0 +1,379 @@
+@charset "UTF-8";
+#adminPages .pagesHeader {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+#adminPages .pagesHeader a.addBtn {
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.4rem 1rem;
+}
+#adminPages .newBooks {
+  flex-wrap: wrap;
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
+  row-gap: 2rem;
+  height: 600px;
+  overflow-y: scroll;
+  padding-right: 15px;
+}
+#adminPages .newBooks a.item__book {
+  width: calc(25% - 2.5rem);
+  color: #fff;
+}
+#adminPages .newBooks a.item__book .picture {
+  height: 270px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+#adminPages .newBooks a.item__book .picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#adminPages .newBooks a.item__book h3 {
+  padding-left: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+#adminPages .newBooks a.item__book p.auther {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  opacity: 0.8;
+}
+
+form.send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label.inputStyle {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+label.inputStyle span {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: #5E0E0D;
+  z-index: 5;
+  padding: 0 3px;
+}
+label.inputStyle input, label.inputStyle select {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem 0.8rem;
+  color: #fff;
+}
+label.inputStyle input::-moz-placeholder, label.inputStyle select::-moz-placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+label.inputStyle input::placeholder, label.inputStyle select::placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+.submitBtn {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 4rem;
+  transition: all 0.5s;
+}
+.submitBtn:hover {
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
+  transition: all 0.5s;
+  border: 1px solid rgb(255, 255, 255);
+}
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.pass-tehlukesizliyi {
+  width: 100%;
+  color: #fff;
+  padding: 0 1rem;
+}
+.pass-tehlukesizliyi i.bar {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 7px;
+  border-radius: 10px;
+}
+.pass-tehlukesizliyi i.bar > i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 7px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.pass-tehlukesizliyi i.bar > i.good {
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(206, 161, 0) 50%, rgb(31, 188, 0) 100%);
+}
+.pass-tehlukesizliyi i.bar > i.normal {
+  background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(206, 161, 0) 100%);
+  width: 66%;
+}
+.pass-tehlukesizliyi i.bar > i.bad {
+  background: #ff0000;
+  width: 27%;
+}
+.pass-tehlukesizliyi i.bar > i > i {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 0.9rem;
+}
+
+.tableStyle {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.tableStyle thead td {
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tableStyle tbody tr {
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+.tableStyle tbody tr:nth-child(2n) {
+  background-color: #ccc;
+}
+.tableStyle tbody td {
+  padding: 10px;
+  color: #000;
+}
+.tableStyle tbody td a {
+  text-align: center;
+  display: block;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableStyle tbody td a span {
+  font-size: 1.3rem;
+}
+.tableStyle tbody td button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.tableStyle tbody td button[data-option=true] {
+  background-color: rgba(64, 255, 0, 0.2);
+  color: #444;
+}
+.tableStyle tbody td button[data-option=true]::before {
+  content: "Cavablandırılıb";
+}
+.tableStyle tbody td button[data-option=false] {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #444;
+}
+.tableStyle tbody td button[data-option=false]::before {
+  content: "Cavablandırılmayıb";
+}
+
+.categoryAdd_content {
+  display: none;
+}
+.categoryAdd_content h1 {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.categoryAdd_content.active {
+  display: block;
+}
+
+.categoryPage {
+  display: none;
+}
+.categoryPage.active {
+  display: block;
+}
+.categoryPage > .flex {
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.categoryPage > .flex li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categoryPage > .flex li:hover .picture a {
+  opacity: 1;
+}
+.categoryPage > .flex li .picture {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 7px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+}
+.categoryPage > .flex li .picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categoryPage > .flex li .picture a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.categoryPage > .flex li .info {
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.categoryPage > .flex li .info .books {
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+.bookPage_all {
+  display: none;
+}
+.bookPage_all.active {
+  display: block;
+}
+
+.bookPageHeader {
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.bookPageHeader .google_search input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  padding: 5px 40px 5px 15px;
+  color: #fff;
+}
+.bookPageHeader .google_search input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.bookPageHeader .google_search input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.bookPageHeader .google_search input:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+.bookPageHeader .google_search .searchList {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200%;
+  height: 300px;
+  display: none;
+  overflow: hidden;
+}
+.bookPageHeader .google_search .searchList ul {
+  height: 300px;
+  overflow-y: scroll;
+}
+.bookPageHeader .google_search .searchList ul li {
+  justify-content: flex-start;
+  height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.bookPageHeader .google_search .searchList ul li .picture {
+  flex-basis: 90px;
+  min-width: 90px;
+  max-width: 90px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+}
+.bookPageHeader .google_search .searchList ul li .picture img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.bookPageHeader .google_search .searchList ul li .name {
+  flex-basis: 240px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: left;
+}
+.bookPageHeader .google_search .searchList ul li .option {
+  flex-basis: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.bookPageHeader .google_search .searchList ul li .option button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 15px;
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=pages.css.map */

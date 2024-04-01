@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="scss/style-catalogs/style-catalogs.css">
+    <link rel="stylesheet" href="scss/style-all.css">
+</head>
+
+<body>
+    <!-- Saytin headeri -->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="logo">
+                    <a href="/" title="logo"><img src="./images/logo.svg" alt=""></a>
+                </div>
+                <nav id="headerMenu">
+                    <ul class="flex">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./catalog.html" class="active">Catalog</a></li>
+                        <li><a href="./about.html">About Store</a></li>
+                        <li><a href="./contacts.html">Contact Us</a></li>
+                        <li><a href="./search.html">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="joinus">
+                    <a href="#" class="flex" id="joinusBtn">
+                        <i class="icon-login"></i>
+                        <span>Join us</span>
+                    </a>
+                </div>
+                <div class="mobile-burger">
+                    <button id="burger">
+                        <i></i><i></i><i></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- headerin sonu -->
+
+
+
+<div class="wrapper">
+        <!--All Books basliq hissesi  -->
+        <div class="all-bks">
+            <div class="container">
+
+
+                <nav class="nav-all-books flex">
+                    <h2>
+                        All books
+                    </h2>
+
+                    <ul class="flex" id="showAllKateqoriylar">    
+                        
+    
+                    </ul>
+                </nav>
+
+
+            <!--All Books burda baslayir -->
+            <div class="all-books ourStyle_books">
+
+                <div class="swiper all-books-slider">
+                    <div class="swiper-wrapper">
+
+
+
+
+                      
+                    </div>
+
+                  </div>
+                
+
+                  <div class="swiper-button-next swiper-button-next1"></div>
+                  <div class="swiper-button-prev swiper-button-prev1"></div>
+
+            </div>
+
+
+           
+
+
+
+
+
+
+            </div> 
+            <!-- contianer'in baglanmasi -->
+        </div>
+
+
+
+
+
+
+<div class="social_links">
+    <h3>Follow us on social media</h3>
+    <ul class="flex">
+        <li><a href=""><i class="icon-fb"></i></a></li>
+        <li><a href=""><i class="icon-tw"></i></a></li>
+        <li><a href=""><i class="icon-ins"></i></a></li>
+    </ul>
+</div>
+
+</div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="flex">
+                <div class="logo">
+                    <a href="" title="logo">
+                        <img src="./images/footer-logo.svg" alt="">
+
+                    </a>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="flex">
+                        <div class="menu__item">
+                            <h4>Popular</h4>
+                            <ul>
+                                <li><a href="#">Programming</a></li>
+                                <li><a href="#">Books for children</a></li>
+                                <li><a href="#">Psychology</a></li>
+                                <li><a href="#">Business</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <h4>Popular</h4>
+                            <ul>
+                                <li><a href="#">Programming</a></li>
+                                <li><a href="#">Books for children</a></li>
+                                <li><a href="#">Psychology</a></li>
+                                <li><a href="#">Business</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <h4>Cash</h4>
+                            <ul>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">About the store</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <h4>Help</h4>
+                            <ul>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Purchase returns</a></li>
+                                <li><a href="#">Buyer help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Modal pencere kodu -->
+    <div class="modal modal-none" id="modalWin">
+        <div class="modal-content">
+           <div class="joinUs_start">
+            <h2>Join Us</h2>
+                <form action="" id="signUpUser">
+                    <label for=""><input type="text" name="userLogin" placeholder="Full name" required></label>
+                    <label for=""><input type="text" name="userEmail" placeholder="E-mail" required></label>
+
+                    <input type="submit" value="Join">
+                </form>
+           </div>
+           <div class="joinUs_finish" style="display: none;">
+                <div class="avatar flex">
+                    <img src="./images/avatar.jpg" alt="">
+                </div>
+                <p class="name"><b>Name: </b> <span></span></p>
+                <p class="email"><b>E-mail: </b> <span></span></p>
+                <br>
+                <a href="#" class="checkoutUser"><i class="icon-door-open-com"></i> Logout</a>
+           </div>
+
+
+        </div>
+    <div class="overlay"></div>
+</div>
+
+    <script src="./js/all-script.js" defer type="module"></script>
+    <script src="./js/page-catalogs.js" defer type="module"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" ></script>
+</body>
+
+</html>

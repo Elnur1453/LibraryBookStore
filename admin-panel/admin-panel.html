@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adminpanel v2</title>
+  <link rel="stylesheet" href="./admin-panel.css">
+
+  
+</head>
+<body>
+  <div class="panel_v2">
+
+
+
+    <div class="flex" id="esas">
+      <div id="sidebar" class="flex">
+        <div class="logo">
+          <img src="../images/logo-admin.svg" alt="">
+        </div>
+        <ul class="navigation flex">
+          <li class="active"><a href="./admin-panel.html"><span class="icon-home-com"></span> Ana səyfə</a></li>
+          <li><a href="./pages/admin-books.html" id="sidebarBooks"><span class="icon-book-com-2"></span> Kitablar</a></li>
+          <li><a href="./pages/admin-category.html" id="sidebarCategory"><span class="icon-books-com"></span> Kateqoriyalar</a></li>
+          <li><a href="./pages/admin-about.html" id="sidebarAbout"><span class="icon-info-com"></span> Bizim haqqda</a></li>
+          <li><a href="./pages/admin-users.html" id="sidebarUsers"><span class="icon-user-group-com"></span> İstifadəçilər</a></li>
+          <li><a href="./pages/admin-feedback.html" id="sidebarContacts"><span class="icon-phone-com"></span> Əlaqə</a></li>
+          <li><a href="./pages/admin-setting.html" id="sidebarSetting"><span class="icon-gear-com"></span> Ayarlar</a></li>
+        </ul>
+        <div class="mobMenu">
+          <button id="mobileBurger_btn">
+            <i></i><i></i><i></i>
+          </button>
+        </div>
+        <div class="logout">
+          <a href=""><span class="icon-door-open-com"></span> <span class="text">Çıxış</span></a>
+        </div>
+      </div>
+  
+  
+      <main>
+        
+          <header class="flex">
+            <nav>
+              <ul class="flex">
+                <li><a href="" class="active">Ana seyfe</a></li>
+         
+                <li><a href="./pages/admin-statistika.html">Statistika</a></li>
+              </ul>
+            </nav>
+            
+            <div class="push">
+              <div class="push_icon">
+                <i class="icon-bell-com"></i>
+                <span></span>
+              </div>
+              <div class="push__content">
+                
+                <ul id="pushBase"></ul>
+                
+              </div>
+            </div>
+          </header>
+
+
+          <div id="content">
+
+
+            <div class="flex">
+
+
+              <div class="main_books">
+                <div id="kateqoriyalar">
+                  <h2>Kateqoriyalar</h2>
+                  <div class="kateqoriyalar__items flex">
+                    <div class="json flex"></div>
+                    <a href="./pages/admin-category.html" class="item">
+                      <div class="picture all">
+                        <span>Hamısı</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+    
+    
+                <div id="sonKitablar">
+                  <h2>Son əlavə edilən kitablar</h2>
+                  <div class="newBooks flex">
+                   
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="main_statistika">
+                <h2>Statistika</h2>
+                <div class="stat__base">
+                  <h5>Kitab sayi  <span class="icon-book-com-2"></span></h5>
+                  <div class="bar">
+                    <i class="default">
+                      <span>1000-dən</span>
+                    </i>
+                    <i class="active">
+                      <span>190</span>
+                      <i class="top"></i>
+                    </i>
+                  </div>
+                  <p class="desc">Cəmi bazada kitab sayı</p>
+                </div>
+                <div class="stat_view">
+                  <h5>Ən çox oxunan kitab</h5>
+                  <ul id="topThreeHome">
+                    
+                  </ul>
+                </div>
+                <a href="./pages/admin-statistika.html" class="all-stat">Bütün statistika</a>
+              </div>
+
+
+
+
+
+            </div>
+
+
+
+          </div>
+
+      </main>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="admin-panel-ui.js" defer type="module"></script>
+  <script src="./js/index-page.js" defer type="module"></script>
+
+  
+</body>
+</html>
